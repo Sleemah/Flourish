@@ -1,5 +1,5 @@
 
-<img src="https://k.top4top.io/p_2697f8wjq1.png" width="100" height="110">
+<img src="https://k.top4top.io/p_2697f8wjq1.png" width="100" height="115">
 
 Talk To Your Data
 Flourish is a data visualization tool that uses AI to create interactive and visually appealing graphs and charts for Small and Medium-sized Enterprises (SMEs). 
