@@ -1,7 +1,5 @@
-<div style="width: 30%; height: 40%">
-  
-  ![FLOURISHLOGO](https://github.com/Sleemah/Flourish/assets/94294032/ce632269-01b0-4af4-bb50-5f3dd4bd432f)
-  
+<div style="width: 10%; height: 20%">
+   ![FLOURISHLOGO](https://github.com/Sleemah/Flourish/assets/94294032/ce632269-01b0-4af4-bb50-5f3dd4bd432f) 
 </div>
 
 Ta
