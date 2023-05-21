@@ -1,0 +1,27 @@
+What is the most suitable Vega-lite graph specification to answer "How many data points for each month?" for the following data sample surrounded in ' bellow:
+'{"date": "2010/01/01 00:00", "temp": "39.4"}'
+
+Structure output as a Vega-Lite json specification structured as in examples surrounded in ''' for sample surrounded in '' respectively for each example bellow:
+''{"Title":"The Land Girls","US_Gross":146083,"Worldwide_Gross":146083,"US_DVD_Sales":null,"Production_Budget":8000000,"Release_Date":"12-Jun-98","MPAA_Rating":"R","Running_Time_min":null,"Distributor":"Gramercy","Source":null,"Major_Genre":null,"Creative_Type":null,"Director":null,"Rotten_Tomatoes_Rating":null,"IMDB_Rating":6.1,"IMDB_Vote s":1071}''
+
+'''{$schema: 'https://vega.github.io/schema/vega-lite/v5.json', mark: 'bar', encoding: {x: {field: "IMDB Rating", type: "quantitative", bin: true}, y: {aggregate: "count", type: "quantitative"}}}'''
+
+''{ "Name":"chevrolet chevelle malibu",
+      "Miles_per_Gallon":18,
+      "Cylinders":8,
+      "Displacement":307,
+      "Horsepower":130,
+      "Weight_in_lbs":3504,
+      "Acceleration":12,
+      "Year":"1970-01-01",
+      "Origin":"USA"}''
+
+'''{
+  $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+  mark: 'point',
+  encoding: {
+    x: {field: 'Horsepower', type: 'quantitative'},
+    y: {field: 'Miles_per_Gallon', type: 'quantitative'}
+  }
+}'''
+

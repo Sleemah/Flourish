@@ -1,0 +1,17 @@
+Fill the fields in the Vega-Lite json specification bellow with one of the choices indicated for each field, to answer what is the most suitable Vega-lite graph specification for the question: "How many data points for each month?" for the following data sample surrounded in ' bellow:
+'{"date": "2010/01/01 00:00", "temp": "39.4"}'
+
+Choices:
+_Field1_: bar, point, line
+_Filed2_ and _Filed4_: date, temp, IMDB Rating, Title, Miles_per_Gallon, Cylinders, Displacement, Horsepower, *
+_Filed3_ and _Filed5_: quantitative, ordinal
+
+Vega-Lite json specification:
+{
+  $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+  mark: '_Field1_',
+  encoding: {
+    x: {field: '_Filed2_', type: '_Filed3_'},
+    y: {field: '_Filed4_', type: '_Filed5_'}
+  }
+}
