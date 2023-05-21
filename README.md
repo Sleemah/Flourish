@@ -8,4 +8,6 @@ It provides an easy-to-use platform for SMEs to talk to your data as chat and ge
 
 ![image](https://github.com/Sleemah/Flourish/assets/94294032/4c2beea5-bede-4114-90a9-ccf585e21170)
 ![image](https://github.com/Sleemah/Flourish/assets/94294032/960db2be-a2b2-4775-8297-ddf91e80f5b7)
-![image](https://github.com/Sleemah/Flourish/assets/94294032/9ae7856b-8706-47ca-9de6-705335714091)
+
+![image](https://github.com/Sleemah/Flourish/assets/94294032/878c97cf-9261-4b02-ba70-8f873e32d3fa)
+
