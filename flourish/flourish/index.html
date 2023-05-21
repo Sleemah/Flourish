@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Florish</title>
+        <title>Flourish</title>
 
         <!-- CSS FILES -->        
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,9 +70,9 @@
                     <div class="row mx-auto mb-4">
 
                         
-                        <h1 class="text-white text-center">Visualization</h1>
+                        <h1 class="text-white text-center">Summary</h1>
                         <!-- Container for the visualization -->
-                        <div id="vis" class="text-white text-center"></div>
+                        <div id="summary-vis" class="text-white text-center"></div>
 
                     </div>
                     <div class="row">
@@ -96,10 +96,12 @@
                         </div>
 
                     </div>
+                    <div class="row mt-3">
+                        <!-- Container for the visualization -->
+                        <div id="vis" class="text-white text-center"></div>
+                    </div>
                 </div>
             </section>
-
-
 
     
 <footer class="site-footer section-padding">
@@ -114,7 +116,6 @@
             </div>
         </footer>
 
-
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
@@ -126,7 +127,56 @@
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/vega-vis.js"></script>
-        <script src="js/cohere-req.js"></script>
+        <!-- <script src="js/cohere-req.js"></script> -->
+        
+        <script>
+            let data_question = 'How many data points for each month?'
+            let data_sample = '{"date": "2010/01/01 00:00", "temp": "39.4"}'
+            let prompt_form = `Fill the fields in the Vega-Lite json specification bellow with one of the choices indicated for each field, to answer what is the most suitable Vega-lite graph specification for the question: "${data_question}" for the following data sample surrounded in ' bellow:
+'{"date": "2010/01/01 00:00", "temp": "39.4"}'
 
+Choices:
+_Field1_: bar, point, line
+_Filed2_ and _Filed4_: date, temp, IMDB Rating, Title, Miles_per_Gallon, Cylinders, Displacement, Horsepower, *
+_Filed3_ and _Filed5_: quantitative, ordinal
+
+Vega-Lite json specification:
+{
+$schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+mark: '_Field1_',
+encoding: {
+    x: {field: '_Filed2_', type: '_Filed3_'},
+    y: {field: '_Filed4_', type: '_Filed5_'}
+}
+}`
+
+            const options = {
+            method: 'POST',
+            url: 'https://api.cohere.ai/v1/generate',
+            headers: {
+                accept: 'application/json',
+                'content-type': 'application/json',
+                authorization: 'Bearer ZKPWFiFYltThW0Cics97B1BvfcvsWEyAem0Ftm7r'
+            },
+            data: {
+                model: 'command',
+                prompt: prompt_form,
+                max_tokens: 300,
+                temperature: 0.9,
+                k: 0,
+                stop_sequences: [],
+                return_likelihoods: 'NONE'
+            }
+            };
+
+            axios
+            .request(options)
+            .then(function (response) {
+                console.log(response.data);
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
+        </script>
     </body>
 </html>
