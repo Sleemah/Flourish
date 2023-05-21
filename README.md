@@ -4,10 +4,6 @@ Flourish is a data visualization tool that uses AI to create interactive and vis
 It provides an easy-to-use platform for SMEs to talk to your data as chat and generate custom visualizations without the need for specialized technical skills.
 <img src="https://g.top4top.io/p_26977kh6f1.png" width="500" height="300">
 
-![image](https://github.com/Sleemah/Flourish/assets/94294032/744bc911-f3eb-4413-8822-699c3a4c9c91)
-
-![image](https://github.com/Sleemah/Flourish/assets/94294032/4c2beea5-bede-4114-90a9-ccf585e21170)
-![image](https://github.com/Sleemah/Flourish/assets/94294032/960db2be-a2b2-4775-8297-ddf91e80f5b7)
-
-![image](https://github.com/Sleemah/Flourish/assets/94294032/878c97cf-9261-4b02-ba70-8f873e32d3fa)
-
+<img src="https://k.top4top.io/p_2697wt8s41.png" width="500" height="300">
+<img src="https://l.top4top.io/p_26971uzxz2.png" width="500" height="300">
+<img src="https://a.top4top.io/p_2697591oe3.png" width="500" height="300">
