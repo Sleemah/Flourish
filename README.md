@@ -1,4 +1,4 @@
-<div style="width: 60%; height: 60%">
+<div style="width: 30%; height: 40%">
   
   ![FLOURISHLOGO](https://github.com/Sleemah/Flourish/assets/94294032/ce632269-01b0-4af4-bb50-5f3dd4bd432f)
   
